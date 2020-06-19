@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup content</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="blur">
+        <div class="content">
+            <h2>Rio de Janeiro  or simply Rio,[4] is anchor to the Rio de Janeiro metropolitan area and the second-most populous municipality in Brazil and the sixth-most populous in the Americas.</h2>
+            <img src="rio.jpg" >
+            <a href="#" onclick="toggle()">Read more</a>
+        </div>
+    </div>
+    <div id="popup">
+        <h2>Rio de Janeiro  or simply Rio,[4] is anchor to the Rio de Janeiro metropolitan area and the second-most populous municipality in Brazil and the sixth-most populous in the Americas. Rio de Janeiro is the capital of the state of Rio de Janeiro, Brazil's third-most populous state, after São Paulo and Minas Gerais. Part of the city has been designated as a World Heritage Site, named "Rio de Janeiro: Carioca Landscapes between the Mountain and the Sea", by UNESCO on 1 July 2012 as a Cultural Landscape.</h2>
+        <a href="#" onclick="toggle()">close</a>
+    </div>
+    <script>
+        function toggle(){
+            let blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            let popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
